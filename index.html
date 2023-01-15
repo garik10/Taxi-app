@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="app.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Taxi</title>
+</head>
+
+<body>
+    <div class="headNavBar">
+        <span><a href="./about/index.html">About</a></span>
+        <span><a href="./storyy/story.html">Story</a></span>
+        <span class="timeDate">
+            <p id="date"></p>
+            <p id="time"></p>
+        </span>
+
+    </div>
+    <div class="animationHeader">
+        <h1>
+            <span>Taxi for you </span>
+            <div class="message">
+                <div class="word1">quicly</div>
+                <div class="word2">fast</div>
+                <div class="word3">simple</div>
+            </div>
+        </h1>
+    </div>
+
+
+
+    <div class="mineInput">
+        <input type="text" placeholder="Name" id="name">
+        <input type="text" placeholder="  Your Address?" id="youraddress">
+        <input type="text" placeholder=" Where are you going?" id="whereareyougoing">
+    </div>
+    <div class="displayBlock">
+        <p id="display"></p>
+    </div>
+
+    <div class="tablo">
+        <p class="weathet">Weather condition</p>
+        <div class="weatherdisplay">
+            <p id="displayWeather"></p>
+        </div>
+        <div class="navbar">
+            <span class="weather1">Weather</span>
+            <span class="km">Km</span>
+            <span class="cost">Price</span>
+
+        </div>
+        <div class="weatherType">
+            <span class="cloudy">cloudy</span>
+            <span class="cloudy1">1</span>
+            <span class="cloudyCoct">300֏</span>
+        </div>
+        <div class="weatherType">
+            <span class="rain">rainy</span>
+            <span class="rain1">1</span>
+            <span class="rainCost">400֏</span>
+        </div>
+        <div class="weatherType">
+            <span class="snow">snow</span>
+            <span class="snow1">1</span>
+            <span class="snowCost">500֏</span>
+        </div>
+        <div class="weatherType">
+            <span class="sun">sunny</span>
+            <span class="sun1">1</span>
+            <span class="sunCost">200֏</span>
+        </div>
+
+
+    </div>
+    <button class="timebar" onclick="time()">Show driver's ETA</button>
+
+    <div class="timerbox">
+        <span id="timer"></span>
+
+        <p id="timeEnd"></p>
+    </div>
+
+
+
+    <button class="orderButton" onclick="textFunction(document.getElementById('youraddress').value,
+    document.getElementById('whereareyougoing').value,document.getElementById('name').value)">
+        Order</button>
+    <p>@Yerevan</p>
+</body>
+
+</html>

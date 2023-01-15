@@ -1,0 +1,354 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+@keyframes anim {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0 50%;
+    }
+}
+body {
+    background: linear-gradient(90deg, rgb(219, 125, 30), yellow);
+    animation: anim 4s infinite ease-in-out;
+    background-size: 400% 400%;
+    font-family: cursive;
+    background-position: 100px;
+}
+h1 {
+    color: #333;
+    font-family: tahoma;
+    font-size: 3rem;
+    font-weight: 100;
+    line-height: 1.5;
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    width: 550px;
+}
+.animationHeader{
+    margin-top: 3%;
+    margin-left: 30%;
+}
+h1 span {
+    font-size: 40px;
+    margin-left: 40px;
+}
+.message {
+    background-color: yellow;
+    color: #333;
+    display: block;
+    font-weight: 900;
+    overflow: hidden;
+    position: absolute;
+    padding-left: 0.5rem;
+    left: 310px;
+    animation: openclose 7s ease-in-out infinite;
+}
+.word1,
+.word2,
+.word3 {
+    font-family: tahoma;
+}
+@keyframes openclose {
+    0% {
+        top: 0.2rem;
+        width: 0;
+    }
+    5% {
+        width: 0;
+    }
+    15% {
+        width: 230px;
+    }
+    30% {
+        top: 0.2rem;
+        width: 230px;
+    }
+    33% {
+        top: 0.2rem;
+        width: 0;
+    }
+    35% {
+        top: 0.2rem;
+        width: 0;
+    }
+    38% {
+        top: -4.5rem;
+
+    }
+    48% {
+        top: -4.5rem;
+        width: 390px;
+    }
+    62% {
+        top: -4.5rem;
+        width: 290px;
+    }
+    66% {
+        top: -4.5rem;
+        width: 0;
+        text-indent: 0;
+    }
+    71% {
+        top: -9rem;
+        width: 0;
+        text-indent: 5px;
+    }
+    86% {
+        top: -9rem;
+        width: 285px;
+    }
+    95% {
+        top: -9rem;
+        width: 285px;
+    }
+    98% {
+        top: -9rem;
+        width: 0;
+        text-indent: 5px;
+    }
+    100% {
+        top: 0;
+        width: 0;
+        text-indent: 0;
+    }
+}
+.header {
+    text-align: center;
+    text-shadow: 0 4px 8px 0 rgb(255, 255, 255);
+    font-size: 40px;
+    letter-spacing: 30px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: rgba(6, 6, 6, 0.984);
+    font-family: 'Courier New', Courier, monospace;
+}
+.timeDate {
+    color: aliceblue;
+    padding-left: 65%;
+}
+.headNavBar {
+    width: 100%;
+    height: 10vh;
+    background-color: #c47600;
+    box-shadow: 0 4px 8px 0 black;
+    display: flex;
+}
+.headNavBar a {
+    text-decoration: none;
+    color: antiquewhite;
+    font-size: 25px;
+    font-family: cursive;
+}
+.headNavBar span {
+    margin-top: 15px;
+    margin-left: 5%;
+    font-weight: 100;
+}
+.tablo {
+    width: 350px;
+    height: 43vh;
+    border: 1px solid #000000;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 #000000;
+    margin-left: 70%;
+    margin-top: 2%;
+    position: relative;
+}
+.displayBlock {
+    position: absolute;
+    width: 65%;
+    height: 43vh;
+    border: solid 1px #000000;
+    margin-top: 2%;
+    border-radius: 15px;
+    margin-left: 3%;
+    box-shadow: 0 4px 8px 0 #000000;
+}
+.displayBlock p {
+    text-align: center;
+    margin-top: 2vh;
+    font-size: 20px;
+}
+.weatherdisplay {
+    width: 300px;
+    border: 2px solid #000000;
+    height: 10vh;
+    text-align: center;
+    margin-left: 25px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+#displayWeather {
+    font-weight: 600;
+    font-size: 30px;
+    margin-top: 10px;
+}
+.weathet {
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 5px;
+}
+.navbar {
+    margin-top: 10px;
+}
+.weather1 {
+    margin-left: 4%;
+    color: red;
+}
+.cost {
+    margin-left: 75px;
+    color: red;
+}
+.km {
+    margin-left: 80px;
+    color: red;
+}
+.weatherType {
+    margin-top: 5px;
+}
+.cloudy {
+    margin-left: 10px;
+    text-decoration: underline;
+}
+.rain {
+    margin-left: 10px;
+    text-decoration: underline;
+
+}
+
+.snow {
+    margin-left: 10px;
+    text-decoration: underline;
+
+}
+
+.sun {
+    margin-left: 10px;
+    text-decoration: underline;
+
+}
+
+.cloudy1 {
+    margin-left: 32%;
+
+}
+
+.rain1 {
+    margin-left: 35%;
+}
+
+.snow1 {
+    margin-left: 35%;
+}
+
+.sun1 {
+    margin-left: 34%;
+}
+
+.cloudyCoct {
+    margin-left: 80px;
+
+}
+
+.rainCost {
+    margin-left: 80px;
+}
+
+.snowCost {
+    margin-left: 80px;
+}
+
+.sunCost {
+    margin-left: 80px;
+}
+
+.mineInput {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.mineInput input {
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.147);
+    height: 10vh;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 #000000;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 50px;
+
+
+}
+
+.orderButton {
+    width: 200px;
+    height: 10vh;
+    box-shadow: 0 4px 8px 0 #000000;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    font-size: 20px;
+    margin-left: 44%;
+    margin-top: 5%;
+    font-family: cursive;
+    color: rgb(0, 0, 0);
+
+}
+
+.orderButton:hover {
+    cursor: pointer;
+    transform: scale(0.9);
+    transition: 1s;
+}
+
+.timebar {
+    width: 30%;
+    height: 10vh;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    margin-top: 6%;
+    text-align: center;
+    margin-left: 7%;
+    box-shadow: 0 4px 8px 0 #000000;
+    /* position: relative; */
+    background-color: #00000000;
+    font-size: 20px;
+    font-family: cursive;
+    color: rgb(0, 0, 0);
+}
+
+.timebar:hover {
+    cursor: pointer;
+    transform: scale(0.9);
+    transition: 1s;
+}
+
+.timerbox {
+    width: 200px;
+    height: 10vh;
+    border: solid 1px #000000;
+    /* position: absolute; */
+    margin-top: -4.5%;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 #000000;
+    margin-left: 40%;
+    color: rgb(0, 0, 0);
+}
+
+#timer {
+    font-size: 18px;
+
+}
